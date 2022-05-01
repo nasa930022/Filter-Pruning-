@@ -180,8 +180,6 @@ optional arguments:
 
 
 
-
-
 ## Pre-trained Models 
 
 Additionally, we provide the pre-trained models used in our experiments. 
@@ -196,7 +194,7 @@ Additionally, we provide the pre-trained models used in our experiments.
 
 ## Pruned Models
 
-Here is the pruned model of above method.([Link:](https://drive.google.com/drive/folders/1JfzTE2PqMZ_JhEbnUTpqusD8goLdZCTd?usp=sharing)).
+Here is the pruned model of above method.([Link](https://drive.google.com/drive/folders/1JfzTE2PqMZ_JhEbnUTpqusD8goLdZCTd?usp=sharing)).
 
 The pruning rates of each model are listed below.
 

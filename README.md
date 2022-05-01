@@ -195,3 +195,22 @@ Additionally, we provide the pre-trained models used in our experiments.
 | [GoogLeNet](https://drive.google.com/open?id=1rYMazSyMbWwkCGCLvofNKwl58W6mmg5c) 
 
 ## Pruned Models
+
+Here is the pruned model of above method.
+
+The pruning rates of each model are listed below.
+
+|  Model Name	| Pruning Rate 		| Flops		| Param		| Accuracy |
+|---------------|-----------------------|---------------|---------------|----------|
+|  ResNet56	| [0.1]+[0.60]*35+[0.0]*2+[0.6]*6+[0.4]*3+[0.1]+[0.4]+[0.1]+[0.4]+[0.1]+[0.4]+[0.1]+[0.4] | 		|		|    | 
+|  	|  		| 		|		|    | 
+|  	|  		| 		|		|    | 
+|  	|  		| 		|		|    | 
+|  	|  		| 		|		|    | 
+|  	|  		| 		|		|    | 
+|  	|  		| 		|		|    | 
+|  	|  		| 		|		|    | 
+|  	|  		| 		|		|    | 
+|  	|  		| 		|		|    | 
+|  	|  		| 		|		|    | 
+

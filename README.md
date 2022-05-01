@@ -1,7 +1,7 @@
 # Filter Pruning with HRank Method
 Reference to the paper "HRank: Filter Pruning using High-Rank Feature Map". ([Link](https://arxiv.org/abs/2002.10179)).
 
-The orginal codes can be available at: [https://github.com/lmbxmu/HRank](https://github.com/lmbxmu/HRank).
+The orginal codes are available at: [https://github.com/lmbxmu/HRank](https://github.com/lmbxmu/HRank).
 
 ## Running Code
 

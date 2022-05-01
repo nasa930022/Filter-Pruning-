@@ -1,5 +1,5 @@
 # Filter Pruning with HRank Method
-Reference to the paper "HRank: Filter Pruning using High-Rank Feature Map". ([Link](https://arxiv.org/abs/2002.10179).
+Reference to the paper "HRank: Filter Pruning using High-Rank Feature Map". ([Link](https://arxiv.org/abs/2002.10179)).
 
 The orginal codes can be available at: [https://github.com/lmbxmu/HRank](https://github.com/lmbxmu/HRank).
 
@@ -110,22 +110,6 @@ python main.py \
 --compress_rate [0.10]+[0.8]*5+[0.85]+[0.8]*3 \
 --gpu [gpu_id]
 ```
-##### 6. ResNet50
-
-|  Params | Flops| Acc Top1 |Acc Top5 |
-|---------|------|----------|----------|
-| 13.77M  |1.55B |    71.98%| 91.01% |
-
-```shell
-python main.py \
---dataset imagenet \
---data_dir [ImageNet dataset dir] \
---job_dir./result/resnet_50/[folder name] \
---resume [pre-trained model dir] \
---arch resnet_50 \
---compress_rate [0.2]+[0.8]*10+[0.8]*13+[0.55]*19+[0.45]*10 \
---gpu [gpu_id]
-```
 
 After training, checkpoints and loggers can be found in the `job_dir`. The pruned model will be named `[arch]_cov[i]` for stage i, and therefore the final pruned model is the one with largest `i`.
 
@@ -146,6 +130,15 @@ python evaluate.py \
 --gpu [gpu id]
 ```
 
+### Calculate Execution time 
+```shell
+python calculate_time.py \
+--test_model_dir [job dir of test model] \
+--arch [arch name] \
+--test_batch_size [maximum batch size] \
+--gpu [gpu id] \
+--iter [iterations]
+```
 
 ## Other optional arguments
 ```
@@ -176,6 +169,10 @@ optional arguments:
     --arch			The architecture to prune
     				default: vgg_16_bn
 				Optional: resnet_50, vgg_16_bn, resnet_56, resnet_110, densenet_40, googlenet
+    --test_batch_size		Maximum Batch size for testing function.
+    				default: 40
+    --iter			Decide the iteration of test function.
+    				default: 5
 ```
 
 
@@ -197,5 +194,4 @@ Additionally, we provide the pre-trained models used in our experiments.
 | [DenseNet-40](https://drive.google.com/open?id=12rInJ0YpGwZd_k76jctQwrfzPubsfrZH) 
 | [GoogLeNet](https://drive.google.com/open?id=1rYMazSyMbWwkCGCLvofNKwl58W6mmg5c) 
 
-### ImageNet:
- [ResNet50](https://drive.google.com/open?id=1OYpVB84BMU0y-KU7PdEPhbHwODmFvPbB)
+## Pruned Models

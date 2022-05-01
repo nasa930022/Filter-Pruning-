@@ -1,5 +1,6 @@
 # Filter Pruning with HRank
-test for typing normal word
+Reference to "HRank: Filter Pruning using High-Rank Feature Map"
+github: https://github.com/lmbxmu/HRank
 
 
 

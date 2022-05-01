@@ -196,7 +196,7 @@ Additionally, we provide the pre-trained models used in our experiments.
 
 ## Pruned Models
 
-Here is the pruned model of above method.
+Here is the pruned model of above method.([Link:](https://drive.google.com/drive/folders/1JfzTE2PqMZ_JhEbnUTpqusD8goLdZCTd?usp=sharing)).
 
 The pruning rates of each model are listed below.
 
@@ -210,4 +210,5 @@ The pruning rates of each model are listed below.
 |  VGG16_1	| [0.95]+[0.5]*6+[0.9]*4+[0.8]*2 		| 116.63M	| 4.81M	| 91.83%	| 
 |  DenseNet40	| [0.0]+[0.1]*6+[0.7]*6+[0.0]+[0.1]*6+[0.7]*6+[0.0]+[0.1]*6+[0.7]*5+[0.0] 	| 167.41M	| 0.66M	| 93.86%	| 
 |  DenseNet40_1	| [0.1]+[0.5]*6+[0.7]*6+[0.5]+[0.5]*6+[0.7]*6+[0.4]+[0.5]*6+[0.7]*5+[0.1] 	| 106.31M	| 0.43M	| 93.16%	| 
+
 

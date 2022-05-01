@@ -117,6 +117,8 @@ python evaluate.py \
 --gpu [gpu id]
 ```
 
+Load the pruned model `[arch]_cov[i]` with the lagerest `i` which is in the `/result/[arch name]/[folder name]/pruned_checkpoint` folder.
+
 ### Calculate Execution time 
 ```shell
 python calculate_time.py \
@@ -126,6 +128,12 @@ python calculate_time.py \
 --gpu [gpu id] \
 --iter [iterations]
 ```
+
+Calculate both execution time and execution cpu time of test model with the batch size from 1 to `test_batch_size`. The execution time is the average of given iterations.
+
+### plot
+
+Plot the result of execution time of the model.
 
 ## Other optional arguments
 ```
